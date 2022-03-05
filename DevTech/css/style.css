@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-bg-color: #091649;
+  --secondary-bg-color: #6499e7;
+  --teritiary-bg-color1: #240090;
+  --teritiary-bg-color2: #282828;
+  --primary-txt-color: #fff;
+  --secondary-txt-color: #190061;
+  --teritiary-txt-color: #3f7fa2;
+  --primary-btn-color: #8e9cd3;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+}
+
+body {
+  font-family: Nunito;
+}
+/* NAVBAR */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #10255c;
+  padding: 15px 30px 0 30px;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--primary-txt-color);
+}
+
+.logo a h1:hover {
+  color: #a0acdc;
+}
+
+.navLinks ul {
+  display: flex;
+  align-items: center;
+}
+
+.navLinks ul li {
+  margin-right: 30px;
+  list-style: none;
+}
+
+.navLinks ul li a {
+  text-decoration: none;
+  font-size: 19px;
+  letter-spacing: 1px;
+  color: var(--primary-txt-color);
+  position: relative;
+  padding: 0 10px;
+}
+
+.navLinks ul li a:hover {
+  color: #a0acdc;
+}
+
+.navLinks ul li a::after {
+  content: "";
+  position: absolute;
+  background-color: #8e9cd3;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -8px;
+  transition: 0.3s;
+}
+
+.navLinks ul li a:hover::after {
+  width: 100%;
+}
+
+.navLinks a button {
+  width: 112px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  font-family: Nunito;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--primary-txt-color);
+  background: var(--teritiary-bg-color1);
+}
+
+.navLinks a button:hover {
+  color: var(--secondary-txt-color);
+  background: var(--primary-btn-color);
+}
+/* END NAVBAR */
+
+/* HERO SECTION */
+
+.hero {
+  background: var(--primary-bg-color);
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+}
+
+.hero-ctn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.hero-txt {
+  width: 600px;
+  color: var(--primary-txt-color);
+}
+
+.hero-txt h1 {
+  font-size: 45px;
+}
+
+.hero-txt h1 span {
+  color: var(--secondary-bg-color);
+}
+
+.hero-txt h1 span:nth-child(2) {
+  color: var(--secondary-bg-color);
+}
+
+.hero-txt p {
+  font-size: 20px;
+  color: var(--teritiary-txt-color);
+  font-weight: 600;
+}
+
+.hero-txt a button {
+  margin-top: 30px;
+  width: 180px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--primary-txt-color);
+  background: var(--teritiary-bg-color1);
+}
+
+.hero-txt a button:hover {
+  color: var(--primary-txt-color);
+  background: var(--primary-btn-color);
+}
+
+/* END HERO SECTION */
+
+/* ABOUT SECTION */
+
+.about {
+  background: var(--primary-bg-color);
+}
+
+.about h2 {
+  text-align: center;
+  color: var(--primary-txt-color);
+  font-size: 40px;
+}
+
+.about h2 span {
+  color: var(--secondary-bg-color);
+}
+
+.abt-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.abt-info:nth-child(2) {
+  background: var(--secondary-bg-color);
+}
+
+.abt-info-txt {
+  width: 600px;
+  color: var(--primary-txt-color);
+}
+
+.abt-info-txt h3 {
+  font-size: 35px;
+}
+
+.abt-info-txt p {
+  font-size: 18px;
+}
+
+/* END ABOUT SECTION */
+
+/* SERVICE SECTION */
+
+.services {
+  background: var(--secondary-bg-color);
+  color: var(--primary-txt-color);
+  padding-top: 30px;
+}
+
+.services h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.services-ctn {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+
+.service-info {
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* END SERVICE SECTION */
